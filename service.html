@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Offcanvas Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assert/css/nbk.css" />
+  
+</head>
+<body class="p-4">
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assert/resource/logo.webp" alt="NBK Quick Wash Logo" />
+          <span class="d-none d-md-inline ms-2"><b>NBK Quick Wash</b></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end pe-8" id="navbarNav">
+          <ul class="navbar-nav gap-3" id="navbar-links">
+            <li class="nav-item"><a class="nav-link" href="nbk.html">Home</a></li>
+            <!-- <li class="nav-item toggle-nav"><a class="nav-link" href="#ourprocess">Our Process</a></li>
+            <li class="nav-item toggle-nav"><a class="nav-link" href="#section7">Benefits</a></li> -->
+            <li class="nav-item"><a class="nav-link active" href="project1.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+ <div class="container mt-4">
+    <div class="buttons">
+      <ul class="d-flex flex-wrap justify-content-center list-unstyled gap-2 p-0 m-0">
+        <li><button class="button-toggle active">ALL</button></li>
+        <li><button class="button-toggle">B</button></li>
+        <li><button class="button-toggle">C</button></li>
+        <li><button class="button-toggle">D</button></li>
+        <li><button class="button-toggle">F</button></li>
+        <li><button class="button-toggle">G</button></li>
+        <li><button class="button-toggle">H</button></li>
+        <li><button class="button-toggle">J</button></li>
+        <li><button class="button-toggle">K</button></li>
+        <li><button class="button-toggle">L</button></li>
+        <li><button class="button-toggle">M</button></li>
+        <li><button class="button-toggle">O</button></li>
+        <li><button class="button-toggle">P</button></li>
+        <li><button class="button-toggle">Q</button></li>
+        <li><button class="button-toggle">S</button></li>
+        <li><button class="button-toggle">T</button></li>
+        <li><button class="button-toggle">U</button></li>
+        <li><button class="button-toggle">V</button></li>
+      </ul>
+    </div>
+
+    <hr />
+
+  <div class="gallery" id="gallery">
+<button class="btn" onclick="openOffcanvas('blouse')">
+    <div class="figure-box" data-name="Blouse">
+      <figure>
+        <img src="assert/resource/pt1blouse.webp" alt="Blouse" />
+        <figcaption>Blouse</figcaption>
+      </figure>
+    </div>
+  </button>
+      <button class="btn" onclick="openOffcanvas('belt')">
+    <div class="figure-box" data-name="Belt">
+      <figure>
+        <img src="assert/resource/pt3Belt.webp" alt="Belt" />
+        <figcaption>Belt</figcaption>
+      </figure>
+    </div>
+  </button>
+       <button class="btn" onclick="openOffcanvas('backpack')">
+        <div class="figure-box" data-name="Backpack">
+        <figure>
+          <img src="assert/resource/pt4backbag.webp" alt="Backpack" />
+          <figcaption>Backpack</figcaption>
+        </figure>
+      </div>
+       </button>
+      <button class="btn" onclick="openOffcanvas('bedsheet')">
+        <div class="figure-box" data-name="Bedsheet">
+        <figure>
+          <img src="assert/resource/pt5betsheet.webp" alt="Bedsheet" />
+          <figcaption>Bedsheet</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('bathrobe')">
+        <div class="figure-box" data-name="Bathrobe">
+        <figure>
+          <img src="assert/resource/pt6bathrobe.webp" alt="Bathrobe" />
+          <figcaption>Bathrobe</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('cap')">
+        <div class="figure-box" data-name="Cap">
+        <figure>
+          <img src="assert/resource/pt7Cap.webp" alt="Cap" />
+          <figcaption>Cap</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('carpet')">
+        <div class="figure-box" data-name="Carpet">
+        <figure>
+          <img src="assert/resource/pt8Carpet copy.webp" alt="Carpet" />
+          <figcaption>Carpet</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('cushion')">
+        <div class="figure-box" data-name="Cushion">
+        <figure>
+          <img src="assert/resource/pt9Cushion.webp" alt="Cushion" />
+          <figcaption>Cushion</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('curtainpanel')">
+        <div class="figure-box" data-name="Curtain">
+        <figure>
+          <img src="assert/resource/pt10CurtainPanel.webp" alt="Curtain" />
+          <figcaption>Curtain</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('dhoti')">
+        <div class="figure-box" data-name="Dhoti">
+        <figure>
+          <img src="assert/resource/pt11Dhoti.webp" alt="Dhoti" />
+          <figcaption>Dhoti</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('dupatta')">
+        <div class="figure-box" data-name="Dupatta">
+        <figure>
+          <img src="assert/resource/pt12Dupatta.webp" alt="Dupatta" />
+          <figcaption>Dupatta</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('dress')">
+        <div class="figure-box" data-name="Dress">
+        <figure>
+          <img src="assert/resource/pt13Dress.webp" alt="Dress" />
+          <figcaption>Dress</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('dari')">
+        <div class="figure-box" data-name="Dari">
+        <figure>
+          <img src="assert/resource/pt14Dari.webp" alt="Dari" />
+          <figcaption>Dari</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('frock')">
+        <div class="figure-box" data-name="Frock">
+        <figure>
+          <img src="assert/resource/pt15Frock.webp" alt="Frock" />
+          <figcaption>Frock</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('gown')">
+        <div class="figure-box" data-name="Gown">
+        <figure>
+          <img src="assert/resource/pt16Anarkali.webp" alt="Gown" />
+          <figcaption>Gown</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('gloves')">
+        <div class="figure-box" data-name="Gloves">
+        <figure>
+          <img src="assert/resource/pt17Gloves.webp" alt="Gloves" />
+          <figcaption>Gloves</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('hood')">
+        <div class="figure-box" data-name="Hood">
+        <figure>
+          <img src="assert/resource/pt18Hood.webp" alt="Hood" />
+          <figcaption>Hood</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('hat')">
+        <div class="figure-box" data-name="Hat">
+        <figure>
+          <img src="assert/resource/pt19hat.webp" alt="Hat" />
+          <figcaption>Hat</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('jacket')">
+         <div class="figure-box" data-name="Jacket">
+        <figure>
+          <img src="assert/resource/pt20jacket.webp" alt="Jacket" />
+          <figcaption>Jacket</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('jeans')">
+        <div class="figure-box" data-name="Jeans">
+        <figure>
+          <img src="assert/resource/pt21jeans.webp" alt="Jeans" />
+          <figcaption>Jeans</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('kurta')">
+         <div class="figure-box" data-name="Kurta">
+        <figure>
+          <img src="assert/resource/pt22kurta.webp" alt="Kurta" />
+          <figcaption>Kurta</figcaption>
+        </figure>
+      </div>
+      </button>
+     
+      <button class="btn" onclick="openOffcanvas('laundry')">
+        <div class="figure-box" data-name="Byweight">
+        <figure>
+          <img src="assert/resource/pt23laundrybyweight.webp" alt="Byweight" />
+          <figcaption>Byweight</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('lehenga')">
+        <div class="figure-box" data-name="Lehenga">
+        <figure>
+          <img src="assert/resource/pt24lehenga.webp" alt="Lehenga" />
+          <figcaption>Lehenga</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('muffler')">
+         <div class="figure-box" data-name="Muffler">
+        <figure>
+          <img src="assert/resource/pt25muffler.webp" alt="Muffler" />
+          <figcaption>Muffler</figcaption>
+        </figure>
+      </div>
+      </button>
+     
+      <button class="btn" onclick="openOffcanvas('mat')">
+        <div class="figure-box" data-name="Mat">
+        <figure>
+          <img src="assert/resource/pt26mat.webp" alt="Mat" />
+          <figcaption>Mat</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('overcoat')">
+         <div class="figure-box" data-name="Overcoat">
+        <figure>
+          <img src="assert/resource/pt27overcoat.webp" alt="Overcoat" />
+          <figcaption>Overcoat</figcaption>
+        </figure>
+      </div>
+      </button>
+     
+      <button class="btn" onclick="openOffcanvas('pajama')">
+         <div class="figure-box" data-name="Pajama">
+        <figure>
+          <img src="assert/resource/pt28pajama.webp" alt="Pajama" />
+          <figcaption>Pajama</figcaption>
+        </figure>
+      </div>
+      </button>
+     
+      <button class="btn" onclick="openOffcanvas('purse')">
+        <div class="figure-box" data-name="Purse">
+        <figure>
+          <img src="assert/resource/pt29purse.webp" alt="Purse" />
+          <figcaption>Purse</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('pillow')">
+        <div class="figure-box" data-name="Pillow">
+        <figure>
+          <img src="assert/resource/pt30pillow.webp" alt="Pillow" />
+          <figcaption>Pillow</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('quilt')">
+        <div class="figure-box" data-name="Quilt">
+        <figure>
+          <img src="assert/resource/pt31quilt.webp" alt="Quilt" />
+          <figcaption>Quilt</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('shirt')">
+        <div class="figure-box" data-name="Shirt">
+        <figure>
+          <img src="assert/resource/pt32shirt.webp" alt="Shirt" />
+          <figcaption>Shirt</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('sherwani')">
+        <div class="figure-box" data-name="Sherwani">
+        <figure>
+          <img src="assert/resource/pt33sherwani.webp" alt="Sherwani" />
+          <figcaption>Sherwani</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('sweater')">
+         <div class="figure-box" data-name="Sweater">
+        <figure>
+          <img src="assert/resource/pt34sweater.webp" alt="Sweater" />
+          <figcaption>Sweater</figcaption>
+        </figure>
+      </div>
+      </button>
+     
+      <button class="btn" onclick="openOffcanvas('shorts')">
+        <div class="figure-box" data-name="Shorts">
+        <figure>
+          <img src="assert/resource/pt35shorts.webp" alt="Shorts" />
+          <figcaption>Shorts</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('saree')">
+        <div class="figure-box" data-name="Saree">
+        <figure>
+          <img src="assert/resource/pt36saree.webp" alt="Saree" />
+          <figcaption>Saree</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('stole')">
+        <div class="figure-box" data-name="Stole">
+        <figure>
+          <img src="assert/resource/pt37stole.webp" alt="Stole" />
+          <figcaption>Stole</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('salwar')">
+        <div class="figure-box" data-name="Salwar">
+        <figure>
+          <img src="assert/resource/pt38salwar.webp" alt="Salwar" />
+          <figcaption>Salwar</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('skirt')">
+        <div class="figure-box" data-name="Skirt">
+        <figure>
+          <img src="assert/resource/pt39skirt.webp" alt="Skirt" />
+          <figcaption>Skirt</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('shawl')">
+        <div class="figure-box" data-name="shawl">
+        <figure>
+          <img src="assert/resource/pt40shawl.webp" alt="shawl" />
+          <figcaption>shawl</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('sandal')">
+        <div class="figure-box" data-name="Sandal">
+        <figure>
+          <img src="assert/resource/pt41sandal.webp" alt="Sandal" />
+          <figcaption>Sandal</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('shoes')">
+        <div class="figure-box" data-name="Shoes">
+        <figure>
+          <img src="assert/resource/pt42shoes.webp" alt="Shoes" />
+          <figcaption>Shoes</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('shirttrouser')">
+        <div class="figure-box" data-name="Shirts&trouser">
+        <figure>
+          <img src="assert/resource/pt43shirttrouser.webp" alt="Shirts&trouser" />
+          <figcaption>Shirts&trouser</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('shirt5')">
+        <div class="figure-box" data-name="Shirts">
+        <figure>
+          <img src="assert/resource/pt44shirt5.webp" alt="Shirts" />
+          <figcaption>Shirts X 5</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('tshirt')">
+        <div class="figure-box" data-name="T-shirt">
+        <figure>
+          <img src="assert/resource/pt45t-shirt.webp" alt="T-shirt" />
+          <figcaption>T-shirt</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('trouser')">
+        <div class="figure-box" data-name="Trouser">
+        <figure>
+          <img src="assert/resource/pt46trouser.webp" alt="Trouser" />
+          <figcaption>Trouser</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('tops')">
+        <div class="figure-box" data-name="Tops">
+        <figure>
+          <img src="assert/resource/pt47kurti.webp" alt="Tops" />
+          <figcaption>Tops</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('trolley')">
+        <div class="figure-box" data-name="Trolley">
+        <figure>
+          <img src="assert/resource/pt48trolley.webp" alt="Trolley" />
+          <figcaption>Trolley</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('tie')">
+        <div class="figure-box" data-name="Tie">
+        <figure>
+          <img src="assert/resource/pt49tie.webp" alt="Tie" />
+          <figcaption>Tie</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('toy')">
+        <div class="figure-box" data-name="Toy">
+        <figure>
+          <img src="assert/resource/pt50toy.webp" alt="Toy" />
+          <figcaption>Toy</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('towel')">
+        <div class="figure-box" data-name="Towel">
+        <figure>
+          <img src="assert/resource/pt51towel.webp" alt="Towel" />
+          <figcaption>Towel</figcaption>
+        </figure>
+      </div>
+      </button>
+       
+      <button class="btn" onclick="openOffcanvas('tablecloth')">
+        <div class="figure-box" data-name="Tabelcloth">
+        <figure>
+          <img src="assert/resource/pt52table-cloth.webp" alt="Tabelcloth" />
+          <figcaption>Tabel Cloth</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+      <button class="btn" onclick="openOffcanvas('umberlla')">
+      <div class="figure-box" data-name="Umberlla">
+        <figure>
+          <img src="assert/resource/pt53umbrella.webp" alt="Umberlla" />
+          <figcaption>Umberlla</figcaption>
+        </figure>
+      </div>
+      </button>
+      <button class="btn" onclick="openOffcanvas('vest')">
+        <div class="figure-box" data-name="Vest">
+        <figure>
+          <img src="assert/resource/pt54vest.webp" alt="Vest" />
+          <figcaption>Vest</figcaption>
+        </figure>
+      </div>
+      </button>
+      
+    </div>
+  </div>
+
+  <!-- Custom Offcanvas -->
+  <div class="offcanvas-centered" id="customOffcanvas">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="m-0" id="offcanvasTitle">Service</h5>
+      <button class="btn-close" onclick="closeOffcanvas()"></button>
+    </div>
+
+    <table class="table text-center">
+      <thead>
+        <tr>
+          <th style="text-align: start;">Service</th>
+          <th>Qty</th>
+          <th style="text-align: end;">Total (Rs.)</th>
+        </tr>
+      </thead>
+      <tbody id="serviceTableBody">
+        <!-- Filled dynamically -->
+      </tbody>
+    </table>
+
+    <div class="outside-result">
+      <div class="result-display" id="outsideTotal">Grand Total: ₹0</div>
+      <button class="btn1"><b>Book now</b></button>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+  <div class="container">
+    <h4 class="fw-bold">NBK QUICK WASH</h4>
+    <ul class="nav-links mt-4 mb-3">
+      <li>Home</li>
+      <li>Service</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <p class="mt-3">
+      Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muvåning,
+      och pesask vyfisat. Viktiga poddradio har un mad och inde.
+    </p>
+    <hr>
+    <ul class="social-links mt-4">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+
+  <!-- JS -->
+  <script src="assert/js/nbk.js">
+  </script>
+
+</body>
+</html>
