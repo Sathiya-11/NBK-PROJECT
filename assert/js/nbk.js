@@ -72,7 +72,7 @@
 }
 
 
-    // Show all images by default on page load
+    // Show all images by default 
     filterImages('ALL');
     const serviceData = {
       blouse: [
@@ -360,17 +360,7 @@
     function closeOffcanvas() {
       document.getElementById('customOffcanvas').style.display = 'none';
     }
-function sendToWhatsApp() {
-    const name = document.getElementById("firstName").value + " " + document.getElementById("lastName").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
 
-    const fullMessage = `Hi, I am ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
-    const whatsappNumber = "919876543210"; // Replace with your number
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${fullMessage}`;
-    window.open(whatsappURL, "_blank");
-  }
 
   document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
