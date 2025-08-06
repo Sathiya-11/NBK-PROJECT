@@ -1,10 +1,8 @@
-body {
-  margin: 0;
+
+body{margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-}
-body{
-            width: 100%;
+   width: 100%;
         }
         html,body{
             overflow-x: hidden;
@@ -17,12 +15,7 @@ body{
     .navbar-brand img {
       height: 40px;
     }
-    .ms-10{
-        margin-left: 6rem;
-    }
-    .pe-8{
-        margin-right: 8rem;
-    }
+  
    .navbar-nav .nav-link {
       color: black !important;
       text-decoration: none;
@@ -49,7 +42,7 @@ body{
 }
 
 .small-text {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .highlight {
@@ -182,7 +175,7 @@ body{
 
     .delivery-type {
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 16.2px;
     }
 
     .extra-note {
@@ -204,7 +197,7 @@ body{
       display: flex;
       overflow-x: auto;
       scroll-behavior: smooth;
-      gap: 1rem;
+      gap: 16px;
       padding: 0 60px;
     }
 
@@ -276,8 +269,8 @@ body{
 
     .accordion-item {
       border: 1px solid #e5e5e5;
-      border-radius: 0.5rem;
-      margin-bottom: 1rem;
+      border-radius: 8px;
+      margin-bottom: 16px;
     }
 
     .accordion-body {
@@ -302,7 +295,7 @@ body{
     }
 
     .footer .social-links li i {
-      font-size: 1.5rem;
+      font-size: 24px;
       color: white;
       transition: color 0.3s;
     }
@@ -326,10 +319,10 @@ nav {
       height: 40px;
     }
     .ms-10{
-        margin-left: 6rem;
+        margin-left: 96px;
     }
     .pe-8{
-        margin-right: 8rem;
+        margin-right: 128px;
     }
    .navbar-nav .nav-link {
       color: black !important;
@@ -352,7 +345,7 @@ nav {
 .button-toggle {
       background-color: transparent;
       border: none;
-      padding: 0.5rem 1rem;
+      padding: 8px 16px;
       
       color: #333;
       border-radius: 5px;
@@ -364,9 +357,7 @@ nav {
       color: white;
     }
     hr{
-      /* width: 1200px; */
       justify-content: center;
-      /* margin-left: 150px; */
     }
     .gallery {
       justify-content: center;
@@ -397,7 +388,7 @@ nav {
     figcaption{
       text-align: center;
     }
-     /* Centered Offcanvas Style */
+
     .offcanvas-centered {
       position: fixed;
       top: 50%;
@@ -427,7 +418,7 @@ nav {
       margin-bottom: 15px;
     }
     .result-display {
-      font-size: 1.2rem;
+      font-size: 16.2px;
       font-weight: bold;
       float: left !important;
       background-color: #f8f9fa;
@@ -554,7 +545,7 @@ nav {
 
 .intro-text {
     color: blueviolet;
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .desc-text {
@@ -568,7 +559,7 @@ nav {
     color: white;
     padding: 10px 20px;
     border: none;
-    font-size: 1em;
+    font-size: 20px;
     margin-top: 20px;
     cursor: pointer;
     border-radius: 20px;
@@ -769,11 +760,11 @@ nav {
         padding: 0 20px;
       }
        .intro-text {
-        font-size: 1em;
+        font-size: 20px;
     }
 
     .desc-text {
-        font-size: 0.95em;
+        font-size: 19px;
     }
 
           .contact{
